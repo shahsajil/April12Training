@@ -1,0 +1,25 @@
+CssSeelctor
+
+1. driver.findElement(By.cssSelector("input#userName"))
+
+2. driver.findElement(By.cssSelector("button#doubleClickBtn"))
+   driver.findElement(By.cssSelector("button#rightClickBtn"))
+   driver.findElement(By.cssSelector("button#SMQ89"))
+
+3. driver.findElement(By.cssSelector("#app footer span"));
+
+4. driver.findElement(By.cssSelector("#nav>li"));
+
+5. driver.findElement(By.cssSelector(#oldSelectMenu>option:nth-of-type(5)));
+
+6.document.getElementById("sliderValue").value
+
+7. 
+
+
+Xpath
+
+1. .//*[@id='userName']
+2. .//*[@id='doubleClickBtn']   
+   .//*[@id='rightClickBtn']   
+   .//*[@id='qv4x7']   
