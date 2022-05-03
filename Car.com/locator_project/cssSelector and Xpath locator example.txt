@@ -1,25 +1,28 @@
 CssSeelctor
 
-1. driver.findElement(By.cssSelector("input#userName"))
-
-2. driver.findElement(By.cssSelector("button#doubleClickBtn"))
-   driver.findElement(By.cssSelector("button#rightClickBtn"))
-   driver.findElement(By.cssSelector("button#SMQ89"))
-
-3. driver.findElement(By.cssSelector("#app footer span"));
-
-4. driver.findElement(By.cssSelector("#nav>li"));
-
-5. driver.findElement(By.cssSelector(#oldSelectMenu>option:nth-of-type(5)));
-
-6.document.getElementById("sliderValue").value
+1.input#userName
+2.#doubleClickBtn
+  #rightClickBtn
+  #E3Fm3
+3.footer>span
+4.nav
+5.div#selectMenuContainer option[value="4"]
+6.#sliderValue
 
 7. 
 
 
 Xpath
 
-1. .//*[@id='userName']
-2. .//*[@id='doubleClickBtn']   
-   .//*[@id='rightClickBtn']   
-   .//*[@id='qv4x7']   
+1. //input[@id='userName']
+2. //button[@id='doubleClickBtn']
+   //button[@id='rightClickBtn']
+   //button[@id='FaOfA']
+   
+3. //div[contains(text(),'Vega')]
+4. //input[@id='impressiveRadio']
+5. //input[@id='impressiveRadio']//ancestor::div
+6. //input[@id='impressiveRadio']/parent::div//following-sibling::div
+7. //button[contains(text(), 'Click')]
+
+
