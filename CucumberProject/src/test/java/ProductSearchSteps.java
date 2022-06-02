@@ -5,23 +5,20 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.cucumber.java.en.*;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 
 public class ProductSearchSteps {
 
 	WebDriver driver = null;
 
-	@Given("website browser is open")
-	public void website_browser_is_open() {
-		System.setProperty("webdriver.chrome.driver","src\\test\\resources\\chromedriver.exe");
 
-		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(40,TimeUnit.SECONDS);
+	@Given("website browser is open") public void website_browser_is_open() {
+		System.setProperty("webdriver.chrome.driver",
+				"src\\test\\resources\\chromedriver.exe");
 
-		driver.manage().window().maximize();
-	} 
+		driver = new ChromeDriver(); driver.manage().timeouts().implicitlyWait(30,
+				TimeUnit.SECONDS); driver.manage().window().maximize();
+	}
 
 	@And("navigate to the website url")
 	public void navigate_to_the_website_url() {
