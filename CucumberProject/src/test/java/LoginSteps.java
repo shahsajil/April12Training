@@ -18,7 +18,7 @@ public class LoginSteps {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 	}
-	
+
 	@And("user click in signin tab")
 	public void user_click_in_signin_tab() {	
 		driver.navigate().to("https://invenauto.tech/index.php");
@@ -30,11 +30,10 @@ public class LoginSteps {
 		driver.findElement(By.xpath("//a[@class='login']")).click();
 	}
 
-	@When("user enters username and password")
-	public void user_enters_username_and_password() {
-		driver.findElement(By.id("email")).sendKeys("user11@gmail.com");
-		driver.findElement(By.id("passwd")).sendKeys("user11");
-
+	@When("user enters (.*)and (.*)$")
+	public void user_enters_user11_gmail_com_and_user11(String username, String password) {
+		driver.findElement(By.id("email")).sendKeys(username);
+		driver.findElement(By.id("passwd")).sendKeys(password);
 	}
 
 	@And("click signin button")
