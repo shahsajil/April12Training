@@ -1,0 +1,28 @@
+CssSeelctor
+
+1.input#userName
+2.#doubleClickBtn
+  #rightClickBtn
+  #E3Fm3
+3.footer>span
+4.nav
+5.div#selectMenuContainer option[value="4"]
+6.#sliderValue
+
+7. 
+
+
+Xpath
+
+1. //input[@id='userName']
+2. //button[@id='doubleClickBtn']
+   //button[@id='rightClickBtn']
+   //button[@id='FaOfA']
+   
+3. //div[contains(text(),'Vega')]
+4. //input[@id='impressiveRadio']
+5. //input[@id='impressiveRadio']//ancestor::div
+6. //input[@id='impressiveRadio']/parent::div//following-sibling::div
+7. //button[contains(text(), 'Click')]
+
+
